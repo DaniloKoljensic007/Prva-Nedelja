@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 2</title>
+  </head>
+  <body>
+    <h1>Software Order Form</h1>
+    <form action="index.html">
+      <fieldset>
+        <legend>License details</legend>
+
+        <ul>
+          <li>
+            <label for="email-Address">Email address </label>
+            <input type="email" name="email" id="email-Address" required />
+          </li>
+          <br />
+          <li>
+            <label for="websiteId">Website </label>
+            <input
+              type="text"
+              name="website"
+              id="websiteId"
+              placeholder="https://www.example.com/"
+              required
+            />
+          </li>
+          <br />
+          <li>
+            <label for="licenseId">Number of licenses</label>
+            <input
+              type="text"
+              name="license"
+              id="licenseId"
+              placeholder="How many to buy(1-10)"
+              required
+              
+            />
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Billing details</legend>
+        <ul>
+          <li>
+            <label for="nameId"> Name </label>
+            <input
+              type="text"
+              name="name"
+              id="nameId"
+              required
+              placeholder="First Last"
+            />
+          </li>
+          <br />
+          <li>
+            <label for="address"> Address </label>
+            <textarea
+              name="address"
+              id="address"
+              cols="10"
+              rows="5 "
+              required
+              placeholder="House number, street, city, state"
+            ></textarea>
+          </li>
+          <br />
+          <li>
+            <label for="postalId"> Postal code </label>
+            <input
+              type="text"
+              name="postal"
+              id="postalId"
+              placeholder="Post code or zip code"
+              required
+            />
+          </li>
+          <br />
+          <li>
+            <label for="country"> Country </label>
+            <select name="country" required>
+              <option value="Aus">Australia</option>
+              <option value="Mne">Montenegro</option>
+              <option value="Bs">Brasil</option>
+              <option value="Nor">Norway</option>
+              <option value="Moz">Mozambique</option>
+            </select>
+          </li>
+          <br />
+          <li>
+            <label for="phoneId"> Phone(<i>optional</i>) </label>
+            <input
+              type="tel"
+              name="phone"
+              id="phoneId"
+              placeholder="Include country prefix, e.g..."
+            />
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Payment details</legend>
+
+        <ul>
+          <li>
+            <label for="cardId">Card number</label>
+            <input
+              type="text"
+              name="cardNumber"
+              id="cardId"
+              required
+              placeholder="As shown on the front of you"
+            />
+          </li>
+          <li>
+            <label for="CvvCodeId">CVV code</label>
+            <input
+              type="text"
+              name="cvvCode"
+              id="CvvCodeId"
+              required
+              placeholder="3-digit number of back of your card"
+            />
+          </li>
+          <li>
+            <label for="expiry-dateId">Expiry date</label>
+            <input
+              type="text"
+              name="expiry-date"
+              id="expiry-dateId"
+              required
+              placeholder="YYYY-MM"
+            />
+          </li>
+        </ul>
+      </fieldset>
+      <button>Place Your Order</button>
+
+    </form>
+  </body>
+</html>
