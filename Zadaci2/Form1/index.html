@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form 1</title>
+  </head>
+  <body>
+    <table>
+      <form action="index.html">
+        <th colspan="2">Pizza Shop 2.0</th>
+        <tr>
+          <td><label for="name">Name</label></td>
+          <td><input type="text" id="name" name="username" required maxlength="20" /></td>
+        </tr>
+        <tr>
+          <td>Pizza Topping</td>
+          <td>
+            <input type="radio" name="pizzaTopping" value="supreme" /> Supreme
+            <br />
+            <input type="radio" name="pizzaTopping" value="vege" />
+            Vegeterian
+            <br />
+            <input type="radio" name="pizzaTopping" value="hawaiian" /> Hawaiian
+          </td>
+        </tr>
+        <tr>
+          <td><label for="sauce">Pizza sauce</label></td>
+          <td>
+            <select name="sauce">
+              <option value="tomato">Tomato</option>
+              <option value="garlic">Garlic</option>
+              <option value="hot">Hot Sauce</option>
+              <option value="mayo">Mayo</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Optional Extras</td>
+          <td>
+            <input type="checkbox" name="optional1" /> Extra cheese
+            <input type="checkbox" name="optional2" />Gluten Free Base
+          </td>
+        </tr>
+        <tr>
+            <td colspan="2"><label for="deliveryInstructions">Delivery instructions</label>
+            <textarea name="deliveryInstructions" id="" cols="50" rows="10" required maxlength="100"></textarea></td>
+        </tr>
+
+        <tr >
+            <td colspan="2"><button>Send my Order</button></td>
+
+        </tr>
+
+      </form>
+    </table>
+  </body>
+</html>
