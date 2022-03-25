@@ -1,11 +1,6 @@
-body {
 
-    text-align: center;
-
-}
 
 table {
-
     text-align: center;
     margin: auto;
 }
@@ -13,6 +8,7 @@ td, tr, th{
 
     border: 1px solid gray;
     padding: 12px;
+    
 }
 
 
@@ -24,4 +20,10 @@ td, tr, th{
     font-weight: normal;
 }
 
+ul {
+
+    list-style: none;
+    margin: 5rem;
+    text-align: center;
+}
 
