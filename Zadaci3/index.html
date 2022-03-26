@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tableStyle.css" />
+    <title>Zadatak 3</title>
+  </head>
+  <body>
+    <div id="task_1">
+      <nav>
+        <ul style="list-style: none">
+          <li><a href="#task_1">Task 1</a></li>
+          <li><a href="#task_2">Task 2</a></li>
+          <li><a href="#task_3">Task 3</a></li>
+          <li><a href="#task_4">Task 4</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="task_2">
+      <h1 style="margin-left: 50px">CV</h1>
+
+      <ul>
+        <h2>Programski jezici</h2>
+        <li>Java</li>
+        <li>Javascript</li>
+        <li>Css</li>
+        <li>HTML</li>
+        <li>PHP</li>
+
+        <br />
+
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+
+        <br />
+
+        <li>
+          <a href="https://github.com/DaniloKoljensic007">
+            <strong> Github nalog </strong></a
+          >
+        </li>
+      </ul>
+    </div>
+    <hr />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="task_3">
+      <table style="border: 4px solid black">
+        <caption>
+          Omiljeni Filmovi
+        </caption>
+        <thead>
+          <tr>
+            <th>Ime filma</th>
+            <th>Kratak opis</th>
+            <th>Zanr</th>
+            <th>Datum izlaska</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Braveheart</th>
+            <td>
+              13 vijek Skotska, William Wallace predvodi pobunjenike protiv
+              Engleskog kralja
+            </td>
+            <td>Istorijska drama</td>
+            <td>1995</td>
+            <td><a href="https://www.imdb.com/title/tt0112573/">Link</a></td>
+          </tr>
+
+          <tr>
+            <th>Fight Club</th>
+            <td>Osnivanje ilegalnog borilackog kluba</td>
+            <td>Triler, Drama</td>
+            <td>1999</td>
+            <td><a href="https://www.imdb.com/title/tt0137523/">Link</a></td>
+          </tr>
+
+          <tr>
+            <th>Deer Hunter</th>
+            <td>Depresivna prica o tri ratna druga</td>
+            <td>Ratni, Drama</td>
+            <td>1978</td>
+            <td><a href="https://www.imdb.com/title/tt0077416/">Link</a></td>
+          </tr>
+
+          <tr>
+            <th>Hangover</th>
+            <td>Las vegas, komedija</td>
+            <td>Komedija</td>
+            <td>2010</td>
+            <td><a href="https://www.imdb.com/title/tt1119646/">Link</a></td>
+          </tr>
+
+          <tr>
+            <th>Gladiator</th>
+            <td>Rimski general postaje gladiator koji ubija cara</td>
+            <td>Ratni</td>
+            <td>2000</td>
+            <td><a href="https://www.imdb.com/title/tt0172495/">Link</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div id="task_4">
+      <form action="index.html" method="GET">
+        <h1>Job Application With Resume upload</h1>
+        <br />
+        <br />
+        Contact information
+        <br />
+        <br />
+        <label for="firstName"> First name* </label>
+        <input type="text" id="firstName" name="name" required />
+        <label for="lastName"> Last name* </label>
+        <input type="text" id="lastName" name="name" required />
+        <br />
+        <br />
+        <label for="email">Email*</label>
+        <input type="email" name="email" id="email" required />
+        <br />
+        <br />
+        <label for="phone">Phone*</label>
+        <input type="tel" name="phone" id="phone" required />
+        <br />
+        <br />
+        Position
+        <br />
+        <br />
+        <label for="">Position you are applying for*</label>
+        <select name="position" id="position">
+          <option value="nodeJs">Backend NodeJS</option>
+          <option value="python">Backend Python</option>
+          <option value="react">Frontend React</option>
+          <option value="angular">Frontend Angular</option>
+        </select>
+        <br />
+        <br />
+        Resume upload
+        <br />
+        <br />
+        <input type="file" name="file" id="fileId" />
+        <br />
+        <br />
+        Portfolio website
+        <br />
+        <br />
+        <input type="text" name="website" id="website" />
+        <br />
+        <br />
+        Salary requirement
+        <br />
+        <br />
+        <input type="text" name="salary" id="salaryId" />
+        <br />
+        <br />
+        When can you start
+        <br />
+        <br />
+        <input type="text" name="date" id="dateId" />
+        <br />
+        <br />
+        Are you willing to relocate
+        <br />
+        <input type="radio" name="relocate" /> Yes
+        <br />
+        <input type="radio" name="relocate" /> No
+        <br />
+        <input type="radio" name="relocate" /> Not sure
+        <br />
+        <br />
+        Last company you worked for
+        <br />
+        <br />
+        <input type="text" name="company" id="companyId" />
+        <br />
+        <br />
+        Comments
+        <br />
+        <textarea name="comments" id="" cols="30" rows="10"></textarea>
+
+        <br />
+        <br />
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
